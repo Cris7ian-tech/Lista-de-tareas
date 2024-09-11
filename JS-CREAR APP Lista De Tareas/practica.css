@@ -1,0 +1,90 @@
+:root{
+    --erieBlack: #222222;
+    --white: #ffffff;
+    --ultraViolet: #4B4E6D;
+    --tiffanyBlue: #84DCC6;
+    --cadetGray: #95A3B3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 66.5%;
+    background-color: var(--tiffanyBlue);
+}
+
+h1 {
+    color: var(--erieBlack);
+    margin-top: 8rem;
+    text-align: center;
+}
+
+
+form{
+    width: 35rem;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+form input[type="text"]{
+    background-color: var(--tiffanyBlue);
+    color: var(--erieBlack);
+    border: none;
+    font-size: 1.2rem;
+}
+
+form input[type="text"]::placeholder{
+    color: var(--ultraViolet);
+}
+
+form input[type="text"]:focus{
+    outline: none;
+}
+form input[type="submit"]{
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    color: var(--tiffanyBlue);
+}
+form input[type="submit"]:hover{
+    background-color: var(--cadetGray);
+    cursor: pointer;
+    color: var(--white);
+}
+
+.list-container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.task-container{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cadetGray)
+}
+.closeBtn{
+    width: 30px;
+    height: 30px;
+}
+.closeBtn:hover{
+    cursor: pointer;
+}
+
+#stats{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color:var(--ultraViolet);
+    text-align: center;
+}
